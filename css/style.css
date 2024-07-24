@@ -1,0 +1,74 @@
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(228,74,120, 0.55);
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(228,74,120, 0.55);
+}
+
+.border-primary-subtle{
+        border-color: rgba(228, 74, 120, 0.55)!important;
+    }
+
+.wa-me{
+    color: rgb(223, 75, 121);
+    text-decoration: none;
+}
+
+.wa-me:hover {
+    border-bottom: 2px solid rgb(223, 75, 121);
+}
+.bg-primary-subtle{
+        background-color: rgb(228,74,120,0.20) !important;
+    }
+.feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+}
+
+ .text-primary{
+    background-color: rgb(223, 75, 121);
+}
+
+.btn-primary:hover {
+    background-color: rgba(228, 74, 120, 0.55);
+    border: rgba(228, 74, 120, 0.55);
+}.btn-primary {
+    background-color: rgb(223, 75, 121);
+    border: rgb(223, 75, 121);
+}
+
+.shadow-inset {
+    box-shadow: inset 0 0 30px 20px rgba(34,91,156, 0.15);
+}
+
+
+
+body {
+    /* background: linear-gradient(45deg, rgba(0,0,0, 0) 0%, rgba(30, 87, 153, 0.65) 100%);
+     */
+    background: linear-gradient(90deg, rgba(125, 185, 232, 0) 0%, rgba(247,161,196, 0.7) 76%, rgba(247,161,196, 1) 91%, rgba(247,
+        161,
+        196, 1) 100%);
+    background-size: 100% auto;
+    background-position: center ;
+    background-repeat: no-repeat;
+    opacity: 0.80;
+}
+.section-1 .text{
+    text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.20);
+}
+
+
+main .serv .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15);
+    z-index: 1;
+}
