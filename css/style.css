@@ -9,66 +9,77 @@
     border-radius: 10px;
 }
 
-.navbar-nav .nav-link {
-    color: rgba(228,74,120, 0.55);
-}
-
-.border-primary-subtle{
-        border-color: rgba(228, 74, 120, 0.55)!important;
-    }
-
-.wa-me{
-    color: rgb(223, 75, 121);
-    text-decoration: none;
-}
-
-.wa-me:hover {
-    border-bottom: 2px solid rgb(223, 75, 121);
-}
-.bg-primary-subtle{
-        background-color: rgb(228,74,120,0.20) !important;
-    }
-.feature-icon-small {
-    width: 3rem;
-    height: 3rem;
-}
-
- .text-primary{
-    background-color: rgb(223, 75, 121);
-}
-
-.btn-primary:hover {
-    background-color: rgba(228, 74, 120, 0.55);
-    border: rgba(228, 74, 120, 0.55);
-}.btn-primary {
-    background-color: rgb(223, 75, 121);
-    border: rgb(223, 75, 121);
-}
-
-.shadow-inset {
-    box-shadow: inset 0 0 30px 20px rgba(34,91,156, 0.15);
-}
-
-
-
 body {
-    /* background: linear-gradient(45deg, rgba(0,0,0, 0) 0%, rgba(30, 87, 153, 0.65) 100%);
-     */
-    background: linear-gradient(90deg, rgba(125, 185, 232, 0) 0%, rgba(247,161,196, 0.7) 76%, rgba(247,161,196, 1) 91%, rgba(247,
-        161,
-        196, 1) 100%);
-    background-size: 100% auto;
-    background-position: center ;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* p, h1,
+h2,
+h3,
+h4,
+h5,h6 {
+color: #017ca8 !important;
+} */
+
+.section-1 {
+    background-image: url('../assets/img/soy.jpeg');
+    background-size:contain;;
+    background-position: 85% 40%;
     background-repeat: no-repeat;
-    opacity: 0.80;
+    background-attachment: fixed;
+    height: 90vh;
 }
-.section-1 .text{
-    text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.20);
+
+main  .card-img-block {
+    width: 85% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    top: -30px !important;
+    cursor: pointer!important;
 }
 
 
-main .serv .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.15);
-    z-index: 1;
+main  .cont {
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.6s ease;
+    cursor: pointer;
+        
+    
 }
+
+main .cont p{
+display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+main  .card:hover>.cont {
+    height: 10rem;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 100;
+}
+/* 
+.btn-primary { 
+    background-color:#82d7d0;} */
+
+/* #82d7d0
+#83d8d133
+
+
+
+
+#017ca8
+#017ba733 */
