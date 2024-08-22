@@ -5,14 +5,15 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(228,74,120, 0.55);
+    background: linear-gradient(180deg, rgba(130, 215, 208, 1) 5%, rgba(1, 124, 168, 1) 100%);
+    
     border-radius: 10px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    
 }
+
 
 /* p, h1,
 h2,
@@ -21,6 +22,14 @@ h4,
 h5,h6 {
 color: #017ca8 !important;
 } */
+
+
+
+
+.shadow-inset{
+    background: linear-gradient(180deg, rgba(130, 215, 208, 1) 5%, rgba(1, 124, 168, 1) 100%);
+        box-shadow: inset 0 0 30px 20px rgba(0, 0, 0, 0.15);
+}
 
 .section-1 {
     background-image: url('../assets/img/soy.jpeg');
@@ -71,15 +80,51 @@ main  .card:hover>.cont {
     right: 25px;
     z-index: 100;
 }
-/* 
+
+.whatsapp:hover{
+        transform: scale(1.1);
+}
+
 .btn-primary { 
-    background-color:#82d7d0;} */
+    background: linear-gradient(90deg, rgba(130, 215, 208, 1) 5%, rgba(1, 124, 168, 1) 100%) !important;
+    border: #82d7d0 !important;
+    opacity: .90;
+}
+
+.btn-light {
+        color: #017ca8;
+}
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+        color: #017ca8;
+        transform: scale(1.01);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #8aece4 !important;
+    border: #8aece4 !important;
+        opacity: 100;
+        transform: scale(1.03);
+}
+
+.card-1{
+    background: linear-gradient(white, white) padding-box,
+            linear-gradient(to right, #82d7d0, #017ca8) border-box;
+        border-radius: 0.5rem;
+        border: 2px solid transparent;
+}
 
 /* #82d7d0
 #83d8d133
 
-
+background: rgb(130,215,208);
+background: linear-gradient(90deg, rgba(130,215,208,1) 5%, rgba(1,124,168,1) 100%);
 
 
 #017ca8
 #017ba733 */
+
+/* AIzaSyD-jTfHTLpU-Vz675Ktcke1P8hdFzpcupk */
