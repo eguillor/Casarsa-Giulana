@@ -33,11 +33,20 @@ color: #017ca8 !important;
 
 .section-1 {
     background-image: url('../assets/img/soy.jpeg');
-    background-size:contain;;
+    background-size:contain;
     background-position: 85% 40%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 90vh;
+}
+
+
+
+@media (max-width: 768px) {
+    .text {
+        color: #fff;
+        text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.63);
+    }
 }
 
 main  .card-img-block {
