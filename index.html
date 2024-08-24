@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 
 <body class="position-relative ">
@@ -1325,9 +1327,9 @@
 
                     </ul>
                     <div class="ratio ratio-16x9 ">
-                      <iframe
-                        src="https://www.google.com/maps/d/embed?mid=1wiKto70KyO2rk6bFCv1WM1CnNLP0HEs&ehbc=2E312F&noprof=1"></iframe>
-
+                      <!-- <iframe
+                        src="https://www.google.com/maps/d/embed?mid=1wiKto70KyO2rk6bFCv1WM1CnNLP0HEs&ehbc=2E312F&noprof=1"></iframe> -->
+                      <div id="map"></div>
                     </div>
                   </div>
                 </div>
@@ -1574,7 +1576,6 @@
       <img src="./assets/whatsapp.png" width="60" alt="" /></a>
   </div>
 
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -1583,9 +1584,29 @@
     crossorigin="anonymous"></script>
   <script src="js/index_dom.js" type="module"></script>
   <script src="js/wow.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script>
     new WOW().init();
+    var map = L.map('map').setView([-31.418688, -64.187995], 15);
 
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a target="_blank" href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+
+    L.marker([-31.421062, -64.185223]).addTo(map)
+      .bindPopup('<a target="_blank" href="https://www.google.com/maps/place/Bv+Pte.+Umberto+Arturo+Illia+68,+X5000ASN+C%C3%B3rdoba/@-31.4212454,-64.1852441,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2851a0c338d:0xad5ad291c57a9886!8m2!3d-31.4212454!4d-64.1852441!16s%2Fg%2F11csnd7h94?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">Av. Duarte Quirós 191</a>')
+      .openPopup();
+
+    L.marker([-31.418688, -64.187995]).addTo(map)
+      .bindPopup('<a target="_blank" href="https://www.google.com/maps/place/Av.+Duarte+Quir%C3%B3s+191,+X5022+C%C3%B3rdoba/@-31.4187842,-64.1879631,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2840ba04bc9:0x337b20b4e397ec35!8m2!3d-31.4187842!4d-64.1879631!16s%2Fg%2F11dzp13t92?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">Bv Pte. Umberto Arturo Illia 68</a>')
+      .openPopup();
+
+    // L.marker([55.5, -0.09]).addTo(map)
+    //   .bindPopup('<a target="_blank" href="https://www.google.com/maps/place/Bv+Pte.+Umberto+Arturo+Illia+68,+X5000ASN+C%C3%B3rdoba/@-31.4212454,-64.1852441,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2851a0c338d:0xad5ad291c57a9886!8m2!3d-31.4212454!4d-64.1852441!16s%2Fg%2F11csnd7h94?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">OpenStreetMap</a>')
+    //   .openPopup();
   </script>
 </body>
 
