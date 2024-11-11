@@ -36,7 +36,8 @@
   </header>
 
   <main class="container-fluid px-0">
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" data-bs-dismiss="offcanvas"
+      aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header border-2 border-bottom">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -144,7 +145,7 @@
             </div>
           </div>
           <!-- Modal Urgencias -->
-          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+          <div class="modal fade " id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-xl  modal-dialog-scrollable">
               <div class="modal-content">
@@ -156,17 +157,18 @@
                   <div class="row g-3">
                     <div class="col-12">
                       <div class="row row-cols-1 row-cols-lg-2 g-3">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12  col-lg-6">
                           <div class="card  h-100 shadow ">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                            <div
+                              class="card-body d-flex flex-column justify-content-center align-items-center text-center ">
                               <h2>Guardia Odontológica</h2>
                               <p>¡Sacá un turno para atenderte hoy!</p>
                             </div>
                           </div>
 
                         </div>
-                        <div class="col-12 col-md-6 ">
-                          <div class="card  h-100 shadow ">
+                        <div class="col-12  col-lg-6 ">
+                          <div class="card  h-100 shadow card-1 ">
                             <div class="card-body">
                               <div class="d-grid gap-2">
                                 <a href="https://wa.me/5493517695870" target="_blank"
@@ -186,7 +188,8 @@
 
                     <div class="col-12">
                       <div class="card  shadow ">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+                        <div
+                          class="card-body d-flex flex-column justify-content-center align-items-center text-center ">
                           <h3 class=" mx-3 my-4">¿Porqué tenes que venir a la guardia de Giuli Dental y no perder
                             ni un minuto
                             más
@@ -198,7 +201,7 @@
 
                       <div class="row row-cols-1 row-cols-lg-2 g-3">
 
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <div class="col-12  col-lg-6 d-flex justify-content-center">
                           <div class="card text-start shadow mx-2 mx-sm-0  h-100">
                             <div class="card-body d-flex align-items-center ">
                               <div class="flex-shrink-0 ">
@@ -212,7 +215,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <div class="col-12  col-lg-6 d-flex justify-content-center">
                           <div class="card text-start shadow mx-2 mx-sm-0  h-100">
                             <div class="card-body d-flex align-items-center">
                               <div class="flex-shrink-0  ">
@@ -222,19 +225,6 @@
                                 Atendemos urgencias, medicación, drenajes, radiografías, cementado de coronas y pernos,
                                 retiro de coronas, extracciones
                                 simples, molares y muelas de juicio, ortodoncia y más.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0  ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Operatoria.png" alt="" />
-                              </div>
-                              <p class="text-body-secondary flex-grow-1 ms-3">
-                                Financiamos tu tratamiento con tarjeta en<strong>
-                                  6 cuotas sin interés</strong> y en efectivo con un <strong>20% de descuento</strong>.
                               </p>
                             </div>
                           </div>
@@ -281,11 +271,12 @@
                   <div class="row g-3">
                     <div class="col-12">
                       <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-6">
                           <div class="card  h-100 shadow ">
                             <div class="card-body  ">
 
-                              <h2>Implantes Dentales</h2>
+                              <h2><img class="  img-fluid" width="50" src="./assets/img/implantes.png" alt="" />
+                                Implantes Dentales</h2>
                               <p>Los implantes dentales son <strong>estructuras de titanio</strong> ue se colocan
                                 quirúrgicamente en el hueso maxilar para reemplazar dientes perdidos. Funcionan como una
                                 raíz artificial
@@ -302,8 +293,8 @@
                           </div>
 
                         </div>
-                        <div class="col-12 col-md-6 ">
-                          <div class="card shadow ">
+                        <div class="col-12 col-lg-6">
+                          <div class="card shadow card-1 ">
                             <div class="card-body">
                               <div class="d-grid gap-2">
                                 <a href="https://wa.me/5493517695870" target="_blank"
@@ -320,35 +311,21 @@
                         </div>
                       </div>
                     </div>
+
                     <div class="col-12">
                       <div class="card  shadow ">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
                           <h3 class=" mx-3 my-4">¿Qué incluye el tratamiento?</h3>
                         </div>
                       </div>
                     </div>
+
                     <div class="col-12">
 
                       <div class="row row-cols-1 row-cols-lg-2 g-3">
 
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center ">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/implantes.png" alt="" />
-                              </div>
-                              <p class="text-body-secondary flex-grow-1 ms-3">
-                                Te ofrecemos implantes dentales realizados con una <strong> tecnología moderna y
-                                  accesible</strong> que
-                                ofrece una alternativa muy similar
-                                a los dientes naturales, proporcionando una base firme y devolviendo estética, función y
-                                belleza a tu sonrisa.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
 
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <div class="col-12  col-lg-6 d-flex justify-content-center">
                           <div class="card text-start shadow mx-2 mx-sm-0  h-100">
                             <div class="card-body d-flex align-items-center">
                               <div class="flex-shrink-0  ">
@@ -365,14 +342,14 @@
                           </div>
                         </div>
 
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
+                        <div class="col-12  col-lg-6 d-flex justify-content-center">
                           <div class="card text-start shadow mx-2 mx-sm-0  h-100">
                             <div class="card-body d-flex align-items-center">
                               <div class="flex-shrink-0  ">
                                 <img class="  img-fluid" width="70" src="./assets/img/implantes.png" alt="" />
                               </div>
                               <p class="text-body-secondary flex-grow-1 ms-3">
-                                te damos todas las opciones vigentes en implantes y te ayudamos a elegir la que
+                                Te damos todas las opciones vigentes en implantes y te ayudamos a elegir la que
                                 <strong>mejor
                                   se
                                   adapte a tu presupuesto</strong> y
@@ -383,21 +360,6 @@
                         </div>
 
 
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0  ">
-                                <img class="  img-fluid" width="70" src="./assets/img/implantes.png" alt="" />
-                              </div>
-                              <p class="text-body-secondary flex-grow-1 ms-3">
-                                Financiamos tu tratamiento en hasta<strong> 12 cuotas sin interés</strong> o te hacemos
-                                un
-                                descuento del
-                                <strong>20% pagando en efectivo</strong>.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
 
                       </div>
                     </div>
@@ -441,11 +403,12 @@
                   <div class="row g-3">
                     <div class="col-12">
                       <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-8">
                           <div class="card  h-100 shadow ">
                             <div class="card-body  ">
 
-                              <h2>Tratamientos que ofrecemos:</h2>
+                              <h2><img class="  img-fluid" width="50" src="./assets/img/Protesis.png" alt="" />
+                                Tratamientos que ofrecemos:</h2>
                               <ul>
                                 <li>
                                   <p><strong>Prótesis Dental Removible:</strong> Solución flexible y conveniente para
@@ -468,8 +431,8 @@
                           </div>
 
                         </div>
-                        <div class="col-12 col-md-6 ">
-                          <div class="card  shadow ">
+                        <div class="col-12 col-lg-4 ">
+                          <div class="card  shadow card-1 ">
                             <div class="card-body">
                               <div class="d-grid gap-2">
                                 <a href="https://wa.me/5493517695870" target="_blank"
@@ -484,128 +447,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="card  shadow ">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                          <h3 class=" mx-3 my-4">¿Por qué elegir Giuli Dental para tus Prótesis Dentales?</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-
-                      <div class="row row-cols-1 row-cols-lg-2 g-3">
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Protesis.png" alt="" />
-
-
-                              </div>
-                              <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                <h5 class="fw-semibold my-1 text-body-emphasis">
-                                  Experiencia y profesionalismo:
-                                </h5>
-                                <p class="text-body-secondary">
-                                  Nuestro equipo cuenta con años de experiencia y está comprometido con brindar el más
-                                  alto nivel de atención
-                                  personalizada.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body  d-flex align-items-center">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Protesis.png" alt="" />
-
-
-                              </div>
-                              <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                <h5 class="fw-semibold my-1 text-body-emphasis">
-                                  Tecnología avanzada:
-                                </h5>
-                                <p class="text-body-secondary">
-                                  Utilizamos tecnología de vanguardia para garantizar tratamientos precisos y cómodos.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Protesis.png" alt="" />
-
-
-                              </div>
-                              <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                <h5 class="fw-semibold my-1 text-body-emphasis">
-                                  Enfoque en el paciente:
-                                </h5>
-                                <p class="text-body-secondary">
-                                  Tu comodidad y satisfacción son nuestra máxima prioridad. Estamos aquí para responder
-                                  tus preguntas y aliviar tus
-                                  preocupaciones en cada paso del camino.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Protesis.png" alt="" />
-
-
-                              </div>
-                              <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                <h5 class="fw-semibold my-1 text-body-emphasis">
-                                  Resultados probados:
-                                </h5>
-                                <p class="text-body-secondary">
-                                  Nuestros pacientes satisfechos son el mejor testimonio de nuestra calidad de servicio.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0 ">
-                                <img class="  img-fluid" width="70" src="./assets/img/Protesis.png" alt="" />
-
-
-                              </div>
-                              <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                <h5 class="fw-semibold my-1 text-body-emphasis">
-                                  Personalización integral:
-                                </h5>
-                                <p class="text-body-secondary">
-                                  En Giuli Dental, entendemos que cada paciente es único. Por eso, diseñamos cada
-                                  prótesis
-                                  dental de manera personalizada
-                                  para adaptarse perfectamente a tus necesidades y estilo de vida.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
-
                       </div>
                     </div>
                   </div>
@@ -648,12 +489,13 @@
                 <div class="modal-body">
                   <div class="row g-3">
                     <div class="col-12">
-                      <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                        <div class="col-12 col-md-6">
+                      <div class="row row-cols-1 row-cols-lg-2 g-3  ">
+                        <div class="col-12 col-lg-6">
                           <div class="card  h-100 shadow ">
                             <div class="card-body  ">
 
-                              <h2>Cirugía Dental</h2>
+                              <h2><img class="  img-fluid" width="50" src="./assets/img/cirugía.png" alt="" /> Cirugía
+                                Dental</h2>
                               <p>Nuestra cirugía dental se especializa en extracciones dentales, un procedimiento
                                 necesario en casos de dientes dañados,
                                 infectados o que presentan complicaciones que no pueden resolverse con tratamientos
@@ -668,80 +510,59 @@
                           </div>
 
                         </div>
-                        <div class="col-12 col-md-6 ">
-                          <div class="card shadow ">
-                            <div class="card-body">
-                              <div class="d-grid gap-2">
-                                <a href="https://wa.me/5493517695870" target="_blank"
-                                  class="btn btn-primary btn-lg px-4 me-md-2">
-                                  ¡Saca turno por Whatsapp!
-                                </a>
-                                <a href="https://wa.me/5493517695870" target="_blank"
-                                  class="btn btn-primary btn-lg my-2 px-4 me-md-2">
-                                  ¡Saca turno por Teléfono!
-                                </a>
+
+                        <div class="col-12 col-lg-6">
+                          <div class="row g-3">
+                            <div class="col-12">
+                              <div class="card shadow h-100">
+                                <div class="card-body d-flex align-items-lg-start align-items-center">
+                                  <div class="flex-shrink-0  ">
+                                    <img class="  img-fluid" width="70" src="./assets/img/cirugía.png" alt="" />
+                                  </div>
+                                  <p class="text-body-secondary flex-grow-1 ms-3">
+                                    En mi consultorio, no solo me dedico a realizar procedimientos de <strong>cirugía
+                                      dental
+                                      con precisión</strong>, sino que también me
+                                    aseguro de brindarte un <strong>seguimiento personalizado</strong> durante todo el
+                                    proceso
+                                    de recuperación. <strong>Mi objetivo es que tu salud
+                                      dental se mantenga en óptimas condiciones</strong>.
+
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="card  shadow card-1 ">
+                                <div class="card-body mx-3">
+                                  <div class="d-grid gap-2">
+                                    <a href="https://wa.me/5493517695870" target="_blank"
+                                      class="btn btn-primary btn-lg px-4 me-md-2">
+                                      ¡Saca turno por Whatsapp!
+                                    </a>
+                                    <a href="https://wa.me/5493517695870" target="_blank"
+                                      class="btn btn-primary btn-lg my-2 px-4 me-md-2">
+                                      ¡Saca turno por Teléfono!
+                                    </a>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                         </div>
 
                       </div>
+
                     </div>
-                    <div class="col-12">
-                      <div class="card  shadow ">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                          <h3 class=" mx-3 my-4">¿Por qué elegir Giuli Dental para tus Cirugía Dentales?</h3>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-
-                      <div class="row row-cols-1 row-cols-lg-2 g-3">
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0  ">
-                                <img class="  img-fluid" width="70" src="./assets/img/cirugía.png" alt="" />
-                              </div>
-                              <p class="text-body-secondary flex-grow-1 ms-3">
-                                En mi consultorio, no solo me dedico a realizar procedimientos de <strong>cirugía dental
-                                  con precisión</strong>, sino que también me
-                                aseguro de brindarte un <strong>seguimiento personalizado</strong> durante todo el
-                                proceso
-                                de recuperación. <strong>Mi objetivo es que tu salud
-                                  dental se mantenga en óptimas condiciones</strong>.
-
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 d-flex justify-content-center">
-                          <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                            <div class="card-body d-flex align-items-center">
-                              <div class="flex-shrink-0  ">
-                                <img class="  img-fluid" width="70" src="./assets/img/cirugía.png" alt="" />
-                              </div>
-                              <p class="text-body-secondary flex-grow-1 ms-3">
-                                Financiamos tu tratamiento en hasta<strong> 12 cuotas sin interés</strong> o te hacemos
-                                un
-                                descuento del
-                                <strong>20% pagando en efectivo</strong>.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
-          <!-- Modal CIRUGÍA -->
-
         </div>
+        <!-- Modal CIRUGÍA -->
+
 
         <div class="my-3  collapse " id="collapseExample">
           <div class="row g-3  d-flex justify-content-lg-center justify-content-start">
@@ -779,15 +600,24 @@
                   <div class="modal-body">
                     <div class="row g-3">
                       <div class="col-12">
-                        <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                          <div class="col-12 col-md-6">
+                        <div class="row row-cols-1 row-cols-lg-2 g-3  ">
+                          <div class="col-12 col-lg-6">
                             <div class="card  h-100 shadow ">
                               <div class="card-body  ">
+                                <div class="d-flex ">
+                                  <div class="flex-shrink-0  ">
+                                    <img class=" mt-2 img-fluid" width="50" src="./assets/img/Blanqueamiento.png"
+                                      alt="" />
+                                  </div>
+                                  <p class="text-body-secondary flex-grow-1 ms-3">
+                                    La <strong>Operatoria Dental</strong> se enfoca en el diagnóstico, tratamiento y
+                                    restauración de dientes afectados por caries, fracturas
+                                    u otros daños. Incluye:
+                                  </p>
+                                </div>
 
 
-                                La <strong>Operatoria Dental</strong> se enfoca en el diagnóstico, tratamiento y
-                                restauración de dientes afectados por caries, fracturas
-                                u otros daños. Incluye:
+
                                 <ul>
                                   <li>
                                     <p><strong>Arreglos Dentales:</strong> Procedimientos para reparar dientes dañados
@@ -812,72 +642,53 @@
                             </div>
 
                           </div>
-                          <div class="col-12 col-md-6 ">
-                            <div class="card shadow ">
-                              <div class="card-body">
-                                <div class="d-grid gap-2">
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg px-4 me-md-2">
-                                    ¡Saca turno por Whatsapp!
-                                  </a>
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg my-2 px-4 me-md-2">
-                                    ¡Saca turno por Teléfono!
-                                  </a>
+
+                          <div class="col-12 col-lg-6">
+                            <div class="row g-3">
+                              <div class="col-12">
+                                <div class="card text-start shadow mx-2 mx-sm-0  h-100">
+                                  <div class="card-body d-flex align-items-lg-start align-items-center">
+                                    <div class="flex-shrink-0  ">
+                                      <img class="  img-fluid" width="70" src="./assets/img/Blanqueamiento.png"
+                                        alt="" />
+                                    </div>
+                                    <p class="text-body-secondary flex-grow-1 ms-3">
+                                      En mi consultorio, no solo me dedico a realizar <strong>procedimientos de
+                                        operatoria
+                                        dental con arreglos e incrustaciones de alta calidad</strong>, sino que también
+                                      me
+                                      aseguro de brindarte un <strong>seguimiento personalizado</strong> durante todo el
+                                      proceso
+                                      de recuperación. <strong>Mi objetivo es que tu salud
+                                        dental se mantenga en óptimas condiciones</strong>.
+
+                                    </p>
+                                  </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
+                              <div class="col-12">
 
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="card  shadow ">
-                          <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                            <h3 class=" mx-3 my-4">¿Por qué optar por Giuli Dental para tus Operatorias Dentales?</h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
 
-                        <div class="row row-cols-1 row-cols-lg-2 g-3">
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/Blanqueamiento.png" alt="" />
+                                <div class="card shadow card-1 ">
+                                  <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg px-4 me-md-2">
+                                        ¡Saca turno por Whatsapp!
+                                      </a>
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg my-2 px-4 me-md-2">
+                                        ¡Saca turno por Teléfono!
+                                      </a>
+                                    </div>
+                                  </div>
                                 </div>
-                                <p class="text-body-secondary flex-grow-1 ms-3">
-                                  En mi consultorio, no solo me dedico a realizar <strong>procedimientos de operatoria
-                                    dental con arreglos e incrustaciones de alta calidad</strong>, sino que también me
-                                  aseguro de brindarte un <strong>seguimiento personalizado</strong> durante todo el
-                                  proceso
-                                  de recuperación. <strong>Mi objetivo es que tu salud
-                                    dental se mantenga en óptimas condiciones</strong>.
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/Blanqueamiento.png" alt="" />
-                                </div>
-                                <p class="text-body-secondary flex-grow-1 ms-3">
-                                  Financiamos tu tratamiento en hasta<strong> 12 cuotas sin interés</strong> o te
-                                  hacemos
-                                  un
-                                  descuento del
-                                  <strong>20% pagando en efectivo</strong>.
-                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
+
 
                     </div>
                   </div>
@@ -921,11 +732,13 @@
                   <div class="modal-body">
                     <div class="row g-3">
                       <div class="col-12">
-                        <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                          <div class="col-12 col-md-6">
+                        <div class="row row-cols-1 row-cols-lg-2 g-3  ">
+                          <div class="col-12 col-lg-6">
                             <div class="card  h-100 shadow ">
                               <div class="card-body  ">
-                                <h4>Tratamientos de Estética Orofacial:</h4>
+
+                                <h4><img class="  img-fluid" width="50" src="./assets/img/botox.png" alt="" />
+                                  Tratamientos de Estética Orofacial:</h4>
                                 <ul>
                                   <li>
                                     <p><strong>Aplicación de botox:</strong> Reduce arrugas y líneas de expresión para
@@ -951,72 +764,55 @@
                             </div>
 
                           </div>
-                          <div class="col-12 col-md-6 ">
-                            <div class="card shadow ">
-                              <div class="card-body">
-                                <div class="d-grid gap-2">
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg px-4 me-md-2">
-                                    ¡Saca turno por Whatsapp!
-                                  </a>
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg my-2 px-4 me-md-2">
-                                    ¡Saca turno por Teléfono!
-                                  </a>
+                          <div class="col-12 col-lg-6">
+                            <div class="row g-3">
+                              <div class="col-12">
+                                <div class="card text-start shadow mx-2 mx-sm-0  h-100">
+                                  <div class="card-body d-flex align-items-lg-start align-items-center">
+                                    <div class="flex-shrink-0  ">
+                                      <img class="  img-fluid" width="70" src="./assets/img/botox.png" alt="" />
+                                    </div>
+                                    <p class="text-body-secondary flex-grow-1 ms-3">
+                                      En Giuli Dental, cada tratamiento es diseñado con un enfoque
+                                      <strong>personalizado</strong> para
+                                      resaltar tu <strong>belleza</strong> y mejorar tu
+                                      <strong>bienestar</strong>. Nos dedicamos a entender tus necesidades y ofrecer
+                                      soluciones adaptadas
+                                      a ti, garantizando resultados <strong>óptimos
+                                        y satisfactorios</strong>. Con un servicio <strong>único y de calidad</strong>,
+                                      trabajamos para que cada
+                                      sonrisa refleje lo mejor de cada persona.
+
+
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+
+
+                                <div class="card shadow card-1 ">
+                                  <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg px-4 me-md-2">
+                                        ¡Saca turno por Whatsapp!
+                                      </a>
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg my-2 px-4 me-md-2">
+                                        ¡Saca turno por Teléfono!
+                                      </a>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
 
+
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="card  shadow ">
-                          <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                            <h3 class=" mx-3 my-4">¿Por qué elegir Giuli Dental para tus tratamientos de Cosmética
-                              Orofacial?
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
 
-                        <div class="row row-cols-1 row-cols-lg-2 g-3">
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/botox.png" alt="" />
-                                </div>
-                                <p class="text-body-secondary flex-grow-1 ms-3">
-                                  En Giuli Dental, cada tratamiento se realiza con un <strong>enfoque
-                                    personalizado</strong>para realzar tu <strong>belleza y
-                                    bienestar</strong>,garantizando
-                                  resultados óptimos y satisfactorios..
-
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/botox.png" alt="" />
-                                </div>
-                                <p class="text-body-secondary flex-grow-1 ms-3">
-                                  Financiamos tu tratamiento en hasta<strong> 12 cuotas sin interés</strong> o te
-                                  hacemos
-                                  un
-                                  descuento del
-                                  <strong>20% pagando en efectivo</strong>.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
                     </div>
                   </div>
@@ -1063,17 +859,27 @@
                   <div class="modal-body">
                     <div class="row g-3">
                       <div class="col-12">
-                        <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex align-items-center ">
-                          <div class="col-12 col-md-6">
+                        <div class="row row-cols-1 row-cols-lg-2 g-3 d-flex  ">
+                          <div class="col-12 col-lg-6">
                             <div class="card  h-100 shadow ">
-                              <div class="card-body  ">
-                                <p>El <strong>tratamiento de conducto</strong> es un procedimiento odontológico
-                                  utilizado
-                                  para salvar un diente dañado o infectado. Consiste en la eliminación de la
-                                  <strong>pulpa dental</strong> (el tejido blando dentro del diente) que está afectada
-                                  por
-                                  caries, trauma o infección. El proceso incluye:
-                                </p>
+                              <div class="card-body  mt-3">
+                                <div class="d-flex ">
+                                  <div class="flex-shrink-0  ">
+                                    <img class=" mt-2 img-fluid" width="60"
+                                      src="./assets/img/tratamiento-de-conducto.png" alt="" />
+                                  </div>
+                                  <p class="text-body-secondary flex-grow-1 ms-3">
+                                    El <strong>tratamiento de conducto</strong> es un procedimiento odontológico
+                                    utilizado
+                                    para salvar un diente dañado o infectado. Consiste en la eliminación de la
+                                    <strong>pulpa dental</strong> (el tejido blando dentro del diente) que está afectada
+                                    por
+                                    caries, trauma o infección. El proceso incluye:
+                                  </p>
+                                </div>
+
+
+
                                 <ul>
                                   <li>
                                     <p><strong>Limpieza y desinfección:</strong> Se limpia el canal radicular para
@@ -1085,105 +891,83 @@
                                       proteger el diente de futuras infecciones.</p>
                                   </li>
                                   <li>
-                                    <p><strong>Restauración:</strong> Finalmente, se realiza una restauración del diente
+                                    <p><strong>Restauración:</strong> Finalmente, se realiza una restauración del
+                                      diente
                                       para devolverle su funcionalidad y estética.</p>
                                   </li>
                                 </ul>
-                                <p>Este tratamiento ayuda a conservar el diente y evita la necesidad de una extracción,
+                                <p>Este tratamiento ayuda a conservar el diente y evita la necesidad de una
+                                  extracción,
                                   restaurando su salud y
                                   funcionalidad.</p>
                               </div>
                             </div>
 
                           </div>
-                          <div class="col-12 col-md-6 ">
-                            <div class="card shadow ">
-                              <div class="card-body">
-                                <div class="d-grid gap-2">
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg px-4 me-md-2">
-                                    ¡Saca turno por Whatsapp!
-                                  </a>
-                                  <a href="https://wa.me/5493517695870" target="_blank"
-                                    class="btn btn-primary btn-lg my-2 px-4 me-md-2">
-                                    ¡Saca turno por Teléfono!
-                                  </a>
+
+                          <div class="col-12 col-lg-6">
+                            <div class="row g-3">
+                              <div class="col-12">
+                                <div class="card shadow card-1 ">
+                                  <div class="card-body">
+                                    <div class="d-grid gap-2">
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg px-4 me-md-2">
+                                        ¡Saca turno por Whatsapp!
+                                      </a>
+                                      <a href="https://wa.me/5493517695870" target="_blank"
+                                        class="btn btn-primary btn-lg my-2 px-4 me-md-2">
+                                        ¡Saca turno por Teléfono!
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="card text-start shadow mx-2 mx-sm-0  ">
+                                  <div class="card-body d-flex align-items-lg-start align-items-center">
+                                    <div class="flex-shrink-0  ">
+                                      <img class="  img-fluid" width="70" src="./assets/img/tratamiento-de-conducto.png"
+                                        alt="" />
+                                    </div>
+                                    <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
+                                      <h5 class="fw-semibold my-1 text-body-emphasis">
+                                        Experiencia y precisión:
+                                      </h5>
+                                      <p class="text-body-secondary">
+                                        Nuestro equipo cuenta con amplia experiencia en la realización de tratamientos
+                                        de
+                                        conducto, asegurando resultados
+                                        efectivos y duraderos.
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12">
+                                <div class="card text-start shadow mx-2 mx-sm-0 ">
+                                  <div class="card-body d-flex align-items-lg-start align-items-center">
+                                    <div class="flex-shrink-0  ">
+                                      <img class="  img-fluid" width="70" src="./assets/img/tratamiento-de-conducto.png"
+                                        alt="" />
+                                    </div>
+                                    <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
+                                      <h5 class="fw-semibold my-1 text-body-emphasis">
+                                        Atención personalizada:
+                                      </h5>
+                                      <p class="text-body-secondary">
+                                        Brindamos un seguimiento cercano para garantizar una recuperación óptima y
+                                        resolver
+                                        cualquier inquietud.
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
+
                           </div>
 
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="card  shadow ">
-                          <div class="card-body d-flex flex-column justify-content-center align-items-center ">
-                            <h3 class=" mx-3 my-4">¿Por qué elegir Giuli Dental para tu Tratamiento de Conducto?
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
-
-                        <div class="row row-cols-1 row-cols-lg-2 g-3">
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/tratamiento-de-conducto.png"
-                                    alt="" />
-                                </div>
-                                <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                  <h5 class="fw-semibold my-1 text-body-emphasis">
-                                    Experiencia y precisión:
-                                  </h5>
-                                  <p class="text-body-secondary">
-                                    Nuestro equipo cuenta con amplia experiencia en la realización de tratamientos de
-                                    conducto, asegurando resultados
-                                    efectivos y duraderos.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/tratamiento-de-conducto.png"
-                                    alt="" />
-                                </div>
-                                <div class=" flex-grow-1 ms-3 d-flex flex-column  ">
-                                  <h5 class="fw-semibold my-1 text-body-emphasis">
-                                    Atención personalizada:
-                                  </h5>
-                                  <p class="text-body-secondary">
-                                    Brindamos un seguimiento cercano para garantizar una recuperación óptima y resolver
-                                    cualquier inquietud.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-12 col-sm-6 d-flex justify-content-center">
-                            <div class="card text-start shadow mx-2 mx-sm-0  h-100">
-                              <div class="card-body d-flex align-items-center">
-                                <div class="flex-shrink-0  ">
-                                  <img class="  img-fluid" width="70" src="./assets/img/tratamiento-de-conducto.png"
-                                    alt="" />
-                                </div>
-                                <p class="text-body-secondary flex-grow-1 ms-3">
-                                  Financiamos tu tratamiento en hasta<strong> 12 cuotas sin interés</strong> o te
-                                  hacemos
-                                  un
-                                  descuento del
-                                  <strong>20% pagando en efectivo</strong>.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
                         </div>
                       </div>
 
@@ -1206,6 +990,7 @@
             </button>
           </div>
         </div>
+
       </article>
     </section>
 
@@ -1327,8 +1112,6 @@
 
                     </ul>
                     <div class="ratio ratio-16x9 ">
-                      <!-- <iframe
-                        src="https://www.google.com/maps/d/embed?mid=1wiKto70KyO2rk6bFCv1WM1CnNLP0HEs&ehbc=2E312F&noprof=1"></iframe> -->
                       <div id="map"></div>
                     </div>
                   </div>
@@ -1343,9 +1126,11 @@
 
     <section class="container mt-5 pt-5" id="5" data-scroll-spy>
       <h3 class="display-5  text-center opacity-75 mt-4">
-        <a class="text-body-secondary" href="#"><img src="./assets/instagram.png" width="50" alt="" /></a>
-        ¡Seguíme!
-      </h3>
+        <a class="text-body-secondary text-decoration-none"
+          href="https://www.instagram.com/od.casarsa.giuliana?igsh=N2E5MWtsOXB3ZGpw"><img src="./assets/instagram.png"
+            width="50" alt="" />
+          ¡Seguíme!
+      </h3></a>
       <article class="row gx-3 gy-5    my-2 py-4">
 
         <!-- Slider main container -->
@@ -1554,9 +1339,9 @@
                 <p class="card-text fs-4">"¡No te pierdas más historias! Dale un vistazo a mi perfil para ver todo lo
                   nuevo"
                 </p>
-                <a href="#"
-                  class="fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">[tu
-                  enlace de Instagram]</a>
+                <a target="_blank" href="https://www.instagram.com/od.casarsa.giuliana?igsh=N2E5MWtsOXB3ZGpw"
+                  class="fs-5 link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">@od.casarsa.giuliana
+                </a>
               </div>
             </div>
           </div>
@@ -1604,9 +1389,7 @@
       .bindPopup('<a target="_blank" href="https://www.google.com/maps/place/Av.+Duarte+Quir%C3%B3s+191,+X5022+C%C3%B3rdoba/@-31.4187842,-64.1879631,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2840ba04bc9:0x337b20b4e397ec35!8m2!3d-31.4187842!4d-64.1879631!16s%2Fg%2F11dzp13t92?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">Bv Pte. Umberto Arturo Illia 68</a>')
       .openPopup();
 
-    // L.marker([55.5, -0.09]).addTo(map)
-    //   .bindPopup('<a target="_blank" href="https://www.google.com/maps/place/Bv+Pte.+Umberto+Arturo+Illia+68,+X5000ASN+C%C3%B3rdoba/@-31.4212454,-64.1852441,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2851a0c338d:0xad5ad291c57a9886!8m2!3d-31.4212454!4d-64.1852441!16s%2Fg%2F11csnd7h94?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">OpenStreetMap</a>')
-    //   .openPopup();
+
   </script>
 </body>
 
